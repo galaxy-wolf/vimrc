@@ -1,0 +1,27 @@
+" 中文编码
+set encoding=gbk
+set fileencodings=ucs-bom,utf8,utf16,gbk,big5,gb18030,latin1
+
+" vim配置文件
+let mapleader = ","
+map <silent> <leader>ss :so ~/_gvimrc<cr>
+map <silent> <leader>ee :e ~/_gvimrc<cr>
+autocmd! bufwritepost _gvimrc so ~/_gvimrc
+
+" 设置gui 字体
+set guifont=consolas:h12
+set nu
+
+" 设置tab 长度
+set tabstop=3
+set shiftwidth=3
+set expandtab
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Moving around and tab
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
