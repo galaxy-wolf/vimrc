@@ -50,3 +50,14 @@ set expandtab
 " map <C-h> <C-W>h
 " map <C-l> <C-W>l
 
+" back up 
+set backup
+set backupext=.bak~
+set backupdir=D:\Backup
+set backupskip=D:\Backup\*
+
+" swap dir
+set dir=C:\tmp\
+
+" no windows vim
+let skip_loading_mswin=1
