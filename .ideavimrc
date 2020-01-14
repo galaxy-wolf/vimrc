@@ -1,0 +1,17 @@
+" setting path: https://github.com/JetBrains/ideavim/blob/master/doc/set-commands.md
+set hlsearch
+set incsearch
+set rnu
+set showmode
+set visualbell
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Moving around and tab
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set noexpandtab
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
