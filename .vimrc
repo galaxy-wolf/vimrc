@@ -6,6 +6,7 @@ set nocompatible
 " enable syntax and plugins (for netrw)
 syntax enable
 filetype plugin on
+set hlsearch
 
 " Search down into subfolers
 " Provides tab-completion for all file-ralated tasks
