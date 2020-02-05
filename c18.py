@@ -22,7 +22,7 @@ def get_ip_from_str(s):
 
 def get_my_ip():
     # b'192.168.1.1\\n'
-    ret = subprocess.Popen("ipconfig | grep -ia 'IPv4' | sed -n 2p | grep -iao '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'", shell=True, stdout=subprocess.PIPE).stdout.read()
+    ret = subprocess.Popen("ipconfig | grep -ia -A 5 'vEthernet' | grep -ia 'IPv4' | grep -iao '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'", shell=True, stdout=subprocess.PIPE).stdout.read()
     ret = get_ip_from_str(str(ret))
     return ret, ret[:ret.rfind('.')], ret[ret.rfind('.')+1:]
 
